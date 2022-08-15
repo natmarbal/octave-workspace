@@ -1,4 +1,6 @@
 # Desktop GUI Workspace with Octave
+##### A modified version of the [PraireLearn Desktop GUI Workspace](https://github.com/PrairieLearn/PrairieLearn/tree/master/workspaces/desktop)
+
 
 This image is using Ubuntu 20.04 and provides a desktop environment that users can access from a web browser. There are a few components that are running to get this working:
 
@@ -9,13 +11,13 @@ This image is using Ubuntu 20.04 and provides a desktop environment that users c
 
 ## Building
 
-`docker build . -t "natmarbal/octave-workspace"`
+`docker build . -t "margo5/octave-workspace"`
 
 ## Workspace Options
 
 ```
 "workspaceOptions": {
-    "image": "natmarbal/octave-workspace",
+    "image": "margo5/octave-workspace",
     "port": 8080,
     "home": "/home/prairielearner"
     ...
@@ -23,8 +25,6 @@ This image is using Ubuntu 20.04 and provides a desktop environment that users c
 ```
 
 ### Acknowledgements
-
-Adapted from the [PraireLearn Desktop GUI Workspace](https://github.com/PrairieLearn/PrairieLearn/tree/master/workspaces/desktop)
 
 On the client side, [noVNC](https://novnc.com/info.html) is used to provide the VNC connection. Specifically, their noVNC library API and some of their icon assets are used here. The API and assets are licensed under the [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/) and [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) licenses, respectively.
 

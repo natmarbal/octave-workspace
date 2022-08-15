@@ -2,7 +2,6 @@ FROM ubuntu:20.04
 
 COPY pre-install.sh /pre-install.sh
 RUN /bin/bash /pre-install.sh
-COPY code.desktop /usr/share/applications/code.desktop
 
 COPY pl-gosu-helper.sh /pl-gosu-helper.sh
 COPY start-vnc.sh /start-vnc.sh
