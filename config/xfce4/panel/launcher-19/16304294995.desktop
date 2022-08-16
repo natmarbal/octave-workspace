@@ -1,0 +1,18 @@
+[Desktop Entry]
+Version=1.0
+Name=GNU Octave
+Comment=GUI
+GenericName=GUI
+Exec=/usr/bin/octave --gui %f
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=octave
+Actions=new-empty-window;
+X-Desktop-File-Install-Version=0.24
+X-XFCE-Source=file:///usr/share/applications/org.octave.Octave.desktop
+
+[Desktop Action new-empty-window]
+Name=New Empty Window
+Exec=/usr/bin/octave --gui %F
+Icon=octave
