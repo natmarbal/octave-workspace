@@ -16,6 +16,7 @@ useradd -u 1001 -g 1001 -m -d /home/prairielearner -s /bin/bash prairielearner
 apt-get install xfce4-terminal build-essential -y
 
 # install GNU Octave
+DEBIAN_FRONTEND=noninteractive apt-get -y install tzdata
 apt-get install octave -y
 
 # make default folder to put config files
