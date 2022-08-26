@@ -16,7 +16,7 @@ useradd -u 1001 -g 1001 -m -d /home/prairielearner -s /bin/bash prairielearner
 apt-get install xfce4-terminal build-essential -y
 
 # install GNU Octave
-apt install octave -y
+apt-get install octave -y
 
 # make default folder to put config files
 # (This should already have been done by the Dockerfile COPY directives.)
