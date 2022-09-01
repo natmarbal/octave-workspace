@@ -1,18 +1,9 @@
-FROM ubuntu:20.04
+# use prairielearn desktop workspace
+FROM prairielearn/workspace-desktop
 
-COPY pre-install.sh /pre-install.sh
-RUN /bin/bash /pre-install.sh
+USER root
 
-COPY pl-gosu-helper.sh /pl-gosu-helper.sh
-COPY start-vnc.sh /start-vnc.sh
-COPY config /opt/defaults/config
-COPY local /opt/defaults/local
-COPY server /opt/server
+RUN apt-get update
 
-COPY post-install.sh /post-install.sh
-RUN /bin/bash /post-install.sh
-
-USER 1001
-ENV PL_USER prairielearner
-
-CMD /pl-gosu-helper.sh /start-vnc.sh
+# install octave
+RUN apt-get install -y octave

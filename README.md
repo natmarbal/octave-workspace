@@ -1,7 +1,7 @@
 # Desktop GUI Workspace and Autograder with Octave
 ##### A modified version of the [PraireLearn Desktop GUI Workspace](https://github.com/PrairieLearn/PrairieLearn/tree/master/workspaces/desktop)
 
-## `workspace-image`
+## workspace-image
 Image name: `margo5/octave-workspace`
 
 This image is using Ubuntu 20.04 and provides a desktop environment that users can access from a web browser. There are a few components that are running to get this working:
