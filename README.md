@@ -33,7 +33,7 @@ Docker image for autograding student code written with GNU Octave.
 
 ### Building
 
-`docker build . -t "margo5/octave-workspace"`
+`docker build . -t "margo5/octave-grader"`
 
 ### External Grading Options
 
